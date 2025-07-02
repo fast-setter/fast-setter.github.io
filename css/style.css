@@ -606,7 +606,6 @@ a:focus {
     min-height: 100%;
     width: auto;
     height: auto;
-    z-index: -2;
     /* Mettiamo il video un livello più in basso (-2) per l'overlay generale */
     transform: translate(-50%, -50%);
     background-size: cover;
@@ -666,10 +665,7 @@ a:focus {
 
 /* Media Query per Mobile: Fallback a immagine per la sezione e testo normale */
 @media (max-width: 768px) {
-    #bg-video {
-        display: none;
-        /* Nasconde il video di sfondo sull'intera sezione */
-    }
+
 
     #home {
         background-image: url(../img/cover/home-mobile-fallback.jpg);
@@ -720,10 +716,85 @@ a:focus {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 80%; /* o un valore fisso, tipo 200px */
+    width: 80%;
+    /* o un valore fisso, tipo 200px */
     height: auto;
 }
 
-.immagineTeam{
+.immagineTeam {
     max-height: 32rem;
+}
+
+.nostri-numeri {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin-bottom: 2rem;
+}
+
+.statistiche {
+    max-height: 15rem;
+    background-color: #2f0c42;
+}
+
+
+.mobile-lavoraconnoi {
+    margin-left: 0% !important;
+    background-color: #00000082;
+    margin-top: 1rem;
+    border-radius: 75px;
+    padding: 9px;
+    min-width: 100%;
+    font-size: 20px;
+    min-height: 100%;
+    line-height: 204%;
+  padding-top: 3rem;
+}
+
+@media (min-width: 577px) {
+
+    .mobile-lavoraconnoi2{
+        max-width: 50%;
+  margin-left: 10%;
+    }
+
+    .mobile-container{
+        display: flex;
+    }}
+
+@media (max-width: 576px) {
+
+    .nostri-numeri {
+        gap: 0rem;
+        display: block;
+    }
+
+    .statistiche {
+        max-height: 20rem;
+    }
+
+    .mobile-contacts {
+        margin-bottom: 1rem;
+        font-size: 20px;
+    }
+
+    .mobile-logo {
+        margin-top: -60px;
+    }
+
+    .mobile-lavoraconnoi {
+        margin-left: 0% !important;
+        background-color: #00000082;
+        margin-top: 1rem;
+        border-radius: 75px;
+        padding: 9px;
+        min-width: 100%;
+        font-size: 20px;
+
+    }
+
+
+
+
 }
